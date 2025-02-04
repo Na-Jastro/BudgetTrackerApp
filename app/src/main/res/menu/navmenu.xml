@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/dashboard"
+        android:title="Dashboard" />
 
-    <item android:id="@+id/dashboard"
-        android:title="Dashbord"
-        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/income"
+        android:title="Income" />
 
-    <item android:id="@+id/income"
-        android:title="Income"
-        tools:ignore="HardcodedText" />
-
-    <item android:id="@+id/expense"
-        android:title="Expense"
-        tools:ignore="HardcodedText" />
-
+    <item
+        android:id="@+id/expense"
+        android:title="Expense" />
 </menu>
