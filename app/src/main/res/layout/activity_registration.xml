@@ -8,13 +8,12 @@
     android:gravity="center"
     android:background="@drawable/background_color"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RegistrationActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="UselessParent">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,9 +23,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:text="@string/log_in"
+                android:text="Registration"
                 android:textAppearance="?android:textAppearanceLarge"
-                android:gravity="center" />
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -37,7 +37,7 @@
                 android:textColorHint="@android:color/white"
                 android:background="@drawable/edittext_background"
                 android:padding="15dp"
-                android:id="@+id/email_login"
+                android:id="@+id/email_reg"
                 android:importantForAutofill="no"
                 tools:ignore="TextFields" />
 
@@ -50,7 +50,7 @@
                 android:textColorHint="@android:color/white"
                 android:background="@drawable/edittext_background"
                 android:hint="@string/password"
-                android:id="@+id/password_login"
+                android:id="@+id/password_reg"
                 android:importantForAutofill="no"
                 tools:ignore="TextFields" />
 
@@ -58,10 +58,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="@string/log_in"
+                android:text="@string/registration"
                 android:background="@drawable/edittext_background"
                 android:textColor="@android:color/white"
-                android:id="@+id/btn_login"
+                android:id="@+id/btn_reg"
                 android:textAppearance="?android:textAppearanceMedium"
                 />
 
@@ -69,20 +69,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textColor="@android:color/white"
-                android:id="@+id/forget_password"
-                android:text="@string/forget_password"
-                android:padding="5dp" />
-
-            <TextView
-                android:id="@+id/signup_registration"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
+                android:text="Already have an account? Sign in here."
                 android:padding="5dp"
-                android:text="Don't have an account? Sign up here."
                 android:textColor="@android:color/white"
+                android:id="@+id/login_here"
                 tools:ignore="HardcodedText" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
